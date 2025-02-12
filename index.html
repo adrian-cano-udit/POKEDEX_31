@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POKEDEX</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <h1>Pokedex</h1>
 
-    <h2>Ey que pasa, soy Adrián</h2>
+    <main>
+        <section class="buttons">
+            <button data-filter=".type-fire">Fuego</button>
+            <button data-filter=".type-water">Agua</button>
+            <button data-filter=".type-grass">Planta</button>
+        </section>
 
+        <section class="poke-cont">
+
+            <div class="card type-fire">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png" alt="">
+                <p class="number">4</p>
+                <h2 class="name">Charmander</h2>
+                <p>Tipo: Fuego</p>
+            </div>
+            <div class="card type-water">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png" alt="">
+                <p class="number">7</p>
+                <h2 class="name">Squirtle</h2>
+                <p>Tipo: Agua</p>
+            </div>
+            <div class="card type-grass">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" alt="">
+                <p class="number">7</p>
+                <h2 class="name">Bulbasaur</h2>
+                <p>Tipo: Planta</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ISOTOPE JS -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- MI SCRIPT -->
+     <script src="js/script.js"></script>
 </body>
 </html>
