@@ -1,9 +1,3 @@
-
-
-
-
-/* LOADING PAGE - PIKACHU.HTML */
-
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +5,55 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+    background-color: azure;
+}
+
+h1 {
+    text-align: center;
+    padding: 4rem;
+}
+
+.btns-cont {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    gap: 12px;
+}
+
+.btns-cont button {
+    background-color: rgb(0, 148, 0);
+    color: aliceblue;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.poke-cont {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.poke-cont .card {
+    background-color: aliceblue;
+    border: 1px solid grey;
+    border-radius: 8px;
+    padding: 0.8rem;
+    margin: 0.8rem;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+
+/* LOADING PAGE - PIKACHU.HTML */
 #loader {
     position: fixed;
     top: 0;
