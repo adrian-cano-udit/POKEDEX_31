@@ -1,0 +1,45 @@
+
+
+
+
+/* LOADING PAGE - PIKACHU.HTML */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(23, 0, 44);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader-content {
+    text-align: center;
+    color: aliceblue;
+    font-size: 3rem;
+}
+
+#content {
+    display: none;
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+}
+
+#pikaModel {
+    width: 100%;
+    height: 50vh;
+}
