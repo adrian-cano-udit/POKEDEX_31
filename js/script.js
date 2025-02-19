@@ -3,10 +3,14 @@ $(document).ready(function(){
 
     $pokeCont.isotope({
         itemSelector: ".card",
-        layoutMode: "fitRows"
+        layoutMode: "fitRows",
+        getSortData: {
+            name: ".name",
+            number: ".number parseInt",
+        },
     });
 
-    $(".btns-cont button").on("click", function() {
+    $(".btns-cont .filter").on("click", function() {
         let filterVal = $(this).data("filter");
         $pokeCont.isotope({
             filter: filterVal
@@ -19,5 +23,12 @@ $(document).ready(function(){
     // Boton "Todos"
 
     // Botenes de orden: por número y orden alfabético
+
+    $(".btns-cont .sort").on("click", function() {
+        let sortVal = $(this).data("sort-by");
+        $pokeCont.isotope({
+            sortBy: sortVal
+        })
+    });
 
 });
