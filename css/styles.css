@@ -9,11 +9,6 @@ body {
     background-color: azure;
 }
 
-h1 {
-    text-align: center;
-    padding: 4rem;
-}
-
 .btns-cont {
     display: flex;
     justify-content: center;
@@ -48,10 +43,8 @@ h1 {
     margin: 0.8rem;
     width: 150px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-
 
 /* LOADING PAGE - PIKACHU.HTML */
 #loader {
